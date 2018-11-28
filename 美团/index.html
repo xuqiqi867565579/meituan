@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+        <link rel="stylesheet" href="./css/swiper.css">
+        <link rel="stylesheet" href="./font/iconfont.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--start 头部-->
+            <header>
+                <div class="header-top">
+                    <h4>美团外卖</h4>
+                    <p><i class="iconfont icon-more"></i></p>                   
+                </div>
+                <p><i class="iconfont icon-search"></i><input type="text"></p>               
+            </header>
+            <!--end 头部-->
+            <!--start 主体-->
+            <section>
+                <div class="swiper-container container" id="swiperBox">
+                    <div class="swiper-wrapper swrapper">
+                        <div class="swiper-slide">
+                            <ul>
+                                <li>
+                                    <img src="./images/1-(2)_03.jpg" alt="">
+                                    <i>美食</i>
+                                </li>
+                                <li>
+                                    <img src="./images/1-(2)_05.jpg" alt="">
+                                    <i>超市便利</i>
+                                </li>
+                                <li>
+                                    <img src="./images/1-(2)_07.jpg" alt="">
+                                    <i>生鲜果蔬</i>
+                                </li>
+                                <li>
+                                    <img src="./images/1-(2)_09.jpg" alt="">
+                                    <i>美团专送</i>
+                                </li>
+                                <li>
+                                    <img src="./images/1-(2)_11.jpg" alt="">
+                                    <i>跑腿代购</i>
+                                </li>
+                                <li>
+                                    <img src="./images/1-(2)_18.jpg" alt="">
+                                    <i>早餐</i>
+                                </li>
+                                <li>
+                                    <img src="./images/1-(2)_19.jpg" alt="">
+                                    <i>甜点饮品</i>
+                                </li>
+                                <li>
+                                    <img src="./images/1-(2)_20.jpg" alt="">
+                                    <i>家常菜</i>
+                                </li>
+                                <li>
+                                    <img src="./images/1-(2)_21.jpg" alt="">
+                                    <i>家常菜</i>
+                                </li>
+                                <li>
+                                    <img src="./images/1-(2)_22.jpg" alt="">
+                                    <i>家常菜</i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                                <ul>
+                                    <li>
+                                        <img src="./images/1-(2)_03.jpg" alt="">
+                                        <i>美食</i>
+                                    </li>
+                                    <li>
+                                        <img src="./images/1-(2)_05.jpg" alt="">
+                                        <i>超市便利</i>
+                                    </li>
+                                    <li>
+                                        <img src="./images/1-(2)_07.jpg" alt="">
+                                        <i>生鲜果蔬</i>
+                                    </li>
+                                    <li>
+                                        <img src="./images/1-(2)_09.jpg" alt="">
+                                        <i>美团专送</i>
+                                    </li>
+                                    <li>
+                                        <img src="./images/1-(2)_11.jpg" alt="">
+                                        <i>跑腿代购</i>
+                                    </li>
+                                    <li>
+                                        <img src="./images/1-(2)_18.jpg" alt="">
+                                        <i>早餐</i>
+                                    </li>
+                                    <li>
+                                        <img src="./images/1-(2)_19.jpg" alt="">
+                                        <i>甜点饮品</i>
+                                    </li>
+                                    <li>
+                                        <img src="./images/1-(2)_20.jpg" alt="">
+                                        <i>家常菜</i>
+                                    </li>
+                                    <li>
+                                        <img src="./images/1-(2)_21.jpg" alt="">
+                                        <i>家常菜</i>
+                                    </li>
+                                    <li>
+                                        <img src="./images/1-(2)_22.jpg" alt="">
+                                        <i>家常菜</i>
+                                    </li>
+                                </ul>
+                        </div>
+                      
+                    </div>
+                    <div class="swiper-pagination pagination" id="paginaTion"></div>
+                </div>
+                <div class="scroll">
+                    <ul>
+                        <li>
+                            <img src="./images/1-(2)_01_03.jpg" alt="">
+                            <i>烧狮子头筒食..</i>
+                            <span><i>12.9</i><u>免配送费</u></span>
+                            <p>买价<s>￥33.9</s></p>
+                        </li>
+                        <li>
+                            <img src="./images/1-(2)_01_05.jpg" alt="">
+                            <i>宫保鸡丁筒食套餐..</i>
+                            <span><i>12.9</i><u>免配送费</u></span>
+                            <p>买价<s>￥33.9</s></p>
+                        </li>
+                        <li>
+                            <img src="./images/1-(2)_01_07.jpg" alt="">
+                            <i>烧狮子头筒食..</i>
+                            <span><i>9.9</i><u>免配送费</u></span>
+                            <p>买价<s>￥32</s></p>
+                        </li>
+                    </ul>               
+                    <p>点击查看更多</p>
+                    <p>点击查看更多</p>
+                    <p>点击查看更多</p>
+                </div>
+            </section>
+            <!--end 主体-->
+            <!--start尾部-->
+            <footer>
+
+            </footer>
+            <!--end 尾部-->
+        </div>
+        <script src="./js/swiper.js"></script>
+        <script>
+            new Swiper("#swiperBox",{
+                autoplay:true,
+                loop:true,
+                pagination:{
+                    el:"#paginaTion",
+                    clickable:true
+                }
+            })
+        </script>
+    </body>
+</html>
