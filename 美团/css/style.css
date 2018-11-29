@@ -193,7 +193,7 @@ html {
 
 header {
   width: 100%;
-  height: 2.66667rem;
+  height: auto;
 }
 
 header .header-top {
@@ -243,6 +243,7 @@ header p input {
 section {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   flex: 1;
 }
 
@@ -290,54 +291,65 @@ section .container .swrapper .swiper-slide ul li i {
   font-size: 0.37333rem;
 }
 
-section .scroll {
+section #scroll {
   width: 100%;
-  height: 4.53333rem;
+  height: auto;
+  overflow: hidden;
 }
 
-section .scroll ul {
-  width: 100%;
+section #scroll ul {
+  width: 190%;
   display: flex;
   flex-wrap: nowrap;
 }
 
-section .scroll ul li {
-  width: 33%;
+section #scroll ul li {
+  flex-shrink: 0;
+  width: 15%;
   height: 3.46667rem;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
 
-section .scroll ul li img {
+section #scroll ul li img {
   width: 90%;
   height: 50%;
   padding: 0.13333rem;
 }
 
-section .scroll ul li i {
+section #scroll ul li i {
+  width: 90%;
+  height: 0.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
   text-indent: 0.26667rem;
   font-size: 0.32rem;
 }
 
-section .scroll ul li span {
+section #scroll ul li span {
   height: 0.53333rem;
   color: #fe3931;
   display: flex;
 }
 
-section .scroll ul li span i {
-  font-size: 0.48rem;
+section #scroll ul li span i {
+  width: 50%;
+  font-size: 0.42667rem;
 }
 
-section .scroll ul li span u {
+section #scroll ul li span u {
+  width: 50%;
   border: 1px solid #fe3931;
-  font-size: 0.32rem;
+  font-size: 0.26667rem;
   text-decoration: none;
   border-radius: 0.13333rem;
+  line-height: 0.53333rem;
 }
 
-section .scroll ul li p {
+section #scroll ul li p {
   font-size: 0.32rem;
   color: #ccc;
   text-indent: 0.26667rem;
@@ -346,5 +358,19 @@ section .scroll ul li p {
 footer {
   width: 100%;
   height: 1.06667rem;
-  background: red;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+footer ul li span {
+  font-size: 0.26667rem;
 }

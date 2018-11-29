@@ -10,7 +10,7 @@
     }
     header{
         width:100%;    
-        height:pxTorem(100px);
+        height:auto;
         .header-top{
             width:100%;          
             height:pxTorem(40px);
@@ -49,13 +49,14 @@
                 margin-top:pxTorem(5px);
             }
         }
-        
+     
    
     }
     section{
         width:100%;
         height:100%;
-        flex:1;
+        overflow:hidden;
+         flex:1;
         .container{
             width:100%;
             height:pxTorem(220px);
@@ -98,56 +99,83 @@
             }
             
         }
-        .scroll{
-            width:100%;
-            height:pxTorem(170px);
-           ul{
-                width:100%;
+        #scroll{
+            width:100%;        
+            height:auto;    
+            overflow:hidden;
+            ul{
+                width:190%;
                 display:flex;
                 flex-wrap:nowrap;
-               li{
-                    width:33%;
+                li{
+                    flex-shrink:0;
+                    width:15%;
                     height:pxTorem(130px);
-                    border:1px solid red;
                     display:flex;
                     flex-direction:column;
-                   img{
+                    img{
                         width:90%;
                         height:50%;
                         padding:pxTorem(5px);
-                   }
-                   i{
-                       text-indent:pxTorem(10px);
-                       font-size:pxTorem(12px);
-                   }
-                   span{
-                       height:pxTorem(20px);
-                       color:#fe3931;
-                       display:flex;
+                    }
+                    i{
+                        width:90%;
+                        height:pxTorem(15px);
+                        overflow:hidden;
+                        text-overflow:ellipsis;
+                        display:-webkit-box;
+                        -webkit-line-clamp:1;
+                        -webkit-box-orient:vertical;
+                        text-indent:pxTorem(10px);
+                        font-size:pxTorem(12px);
 
-                       i{
-                            font-size:pxTorem(18px);
-                       }
+                    }
+                    span{
+                        height:pxTorem(20px);
+                        color:#fe3931;
+                        display:flex;
+    
+                        i{
+                            width:50%;
+                            font-size:pxTorem(16px);
+                        }
                         u{
+                            width:50%;
                             border:1px solid #fe3931;
-                            font-size:pxTorem(12px);
+                            font-size:pxTorem(10px);
                             text-decoration:none;
                             border-radius:pxTorem(5px);
+                            line-height:pxTorem(20px);
                         }
-                   }
-                  p{
+                    }
+                    p{
                     font-size:pxTorem(12px);
                     color:#ccc;
                     text-indent:pxTorem(10px);
-                  }
-                   
-                   
-               }
-           } 
+                    }
+                    
+                    
+                }
+            } 
         }
+       
     }
     footer{
         width:100%;
         height:pxTorem(40px);
-        background:red;
+        ul{
+            display:flex;
+            li{
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                width:30%;
+                i{
+                
+                }
+                span{
+                    font-size:pxTorem(10px);
+                }
+            }
+        }
     }
